@@ -1,1 +1,2 @@
-# ci-cd-exercise
+# rbc-clean-code-exercises
+Practice clean code
