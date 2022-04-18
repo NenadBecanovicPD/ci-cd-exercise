@@ -11,7 +11,5 @@ public class CoffeeMachine {
       return;
     }
     monitor.setCoffeeCount(monitor.getCoffeeCount() + 1);
-
-    //everything ok, you will get your coffee now...
   }
 }
