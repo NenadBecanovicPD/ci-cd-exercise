@@ -8,6 +8,6 @@ public class Camera {
   private String resolution;
 
   public void takeAPicture() {
-    //
+
   }
 }
