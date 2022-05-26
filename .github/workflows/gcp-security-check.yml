@@ -22,7 +22,7 @@ jobs:
       - name: 'Get version from tag name'
         id: get_version
         run: |
-          echo ${{format('--build-args PASSWORD={0}', 'some_password')}}
+          echo ${{format('--build-args PASSWORD//={0}', 'some_password')}}
 
       - name: Checkout
         uses: actions/checkout@v3
