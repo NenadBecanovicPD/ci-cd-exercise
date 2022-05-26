@@ -7,7 +7,7 @@ on:
 
 env:
   DATABASE_PASSWORD: 'some_password'
-  PASSWORD: ${{'PASSWORD='}}
+  PASSWORD: 'PASSWORD='
 
 jobs:
   setup-build-publish-deploy:
@@ -22,7 +22,7 @@ jobs:
       - name: 'Get version from tag name'
         id: get_version
         run: |
-          echo PASSWORD= $DATABASE_PASSWORD
+          echo $PASSWORD$DATABASE_PASSWORD
 
       - name: Checkout
         uses: actions/checkout@v3
