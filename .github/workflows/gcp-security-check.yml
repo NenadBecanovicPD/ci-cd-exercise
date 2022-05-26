@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DATABASE_PASSWORD: ${{'PASSWORD'='}}${{'some_password'}}
+  DATABASE_PASSWORD: format('--build-args PASSWORD={0}', 'some_password')
   PASSWORD: 'PASSWORD='
 
 jobs:
