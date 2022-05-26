@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DATABASE_PASSWORD: format('--build-args PASSWORD={0}', 'some_password')
+  DATABASE_PASSWORD: ${{'PASSWORD\='}}${{'some_password'}}
   PASSWORD: 'PASSWORD='
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       - name: 'Get version from tag name'
         id: get_version
         run: |
-          echo ${{format('--build-args PASSWORD\={0}', 'some_password')}}
+          echo $DATABASE_PASSWORD
 
       - name: Checkout
         uses: actions/checkout@v3
