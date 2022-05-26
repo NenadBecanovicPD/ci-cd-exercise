@@ -22,7 +22,7 @@ jobs:
       - name: 'Get version from tag name'
         id: get_version
         run: |
-          echo $PASSWORD $DATABASE_PASSWORD
+          echo $PASSWORD$DATABASE_PASSWORD
 
       - name: Checkout
         uses: actions/checkout@v3
