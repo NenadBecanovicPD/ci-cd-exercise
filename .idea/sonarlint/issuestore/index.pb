@@ -11,3 +11,7 @@ e
 5src/main/java/com/productdock/exercise_1/Monitor.java,0/1/0198705127a99c78b3b18fc82ed08f7aafc2a928
 p
 @src/main/java/com/productdock/exercise_2/ForbiddenException.java,a/9/a98a686d8c68c50252ca81b4bd4931c40c6316fd
+t
+Dsrc/main/java/com/productdock/fortest/mocks/BonusVoucherService.java,8/a/8a6c8f658657dad4e12f968e5d28c8c228851fb0
+i
+9src/main/java/com/productdock/fortest/mocks/Customer.java,a/e/aeaa9347fba1b7ce8560d6c3ca57ce723b624b67

@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+env:
+  DATABASE_PASSWORD: 'some_password'
+  PASSWORD: PASSWORD=$DATABASE_PASSWORD
+
 jobs:
   setup-build-publish-deploy:
     name: Build Production Job
@@ -15,6 +19,10 @@ jobs:
       id-token: 'write'
 
     steps:
+      - name: 'Get version from tag name'
+        id: get_version
+        run: |
+          echo $PASSWORD
 
       - name: Checkout
         uses: actions/checkout@v3
