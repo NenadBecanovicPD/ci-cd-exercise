@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DATABASE_PASSWORD: ${{'PASSWORD\='}}${{'some_password'}}
+  DATABASE_PASSWORD: ${{'PASSWORD\\='}}${{'some_password'}}
   PASSWORD: 'PASSWORD='
 
 jobs:
