@@ -33,7 +33,8 @@ jobs:
           default_bump: ${{ steps.get_bump_type.outputs.bump_type }}
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: actions-ecosystem/action-get-latest-tag@v1
+      - name: Get tag name
+        uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
       - name: Release
         uses: softprops/action-gh-release@v1
