@@ -13,3 +13,5 @@ t
 Dsrc/main/java/com/productdock/fortest/mocks/BonusVoucherService.java,8/a/8a6c8f658657dad4e12f968e5d28c8c228851fb0
 i
 9src/main/java/com/productdock/fortest/mocks/Customer.java,a/e/aeaa9347fba1b7ce8560d6c3ca57ce723b624b67
+k
+;src/main/java/com/productdock/exercise_1/CoffeeMachine.java,6/2/62d21326a54e33600b528bc39488f74cf8089271
