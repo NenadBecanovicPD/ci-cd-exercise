@@ -36,4 +36,4 @@ jobs:
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: test
+          tag_name: ${{ steps.get_bump_type.outputs.bump_type }}
