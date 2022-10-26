@@ -3,7 +3,7 @@ name: Create new Git Release when new Git Tag is made
 on:
   push:
     tags:
-      - "v*.*.*"
+    - "v*.*.*"
 
 jobs:
   build:
