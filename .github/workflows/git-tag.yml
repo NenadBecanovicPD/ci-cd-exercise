@@ -33,10 +33,10 @@ jobs:
           default_bump: ${{ steps.get_bump_type.outputs.bump_type }}
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Get latest tag
-        id: tag_name
-        run: echo "::set-output name=tag::${GITHUB_REF#refs/*/}"
+      - uses: actions-ecosystem/action-get-latest-tag@v1
+        id: get-latest-tag
+        if: ${{ steps.release-label.outputs.level != null }}
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ steps.tag_name.outputs.tag }}
+          tag_name: ${{ steps.get-latest-tag.outputs.tag }}
