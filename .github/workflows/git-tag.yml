@@ -36,7 +36,7 @@ jobs:
       - name: Get tag name
         uses: actions-ecosystem/action-get-latest-tag@v1
         id: get-latest-tag
-      - name: Release
+      - name: Create new Git Release when PR is merged
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ steps.get-latest-tag.outputs.tag }}
