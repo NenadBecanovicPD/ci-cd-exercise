@@ -1,15 +1,15 @@
-name: Create new Git Release when new Git Tag is made
-
-on:
-  push:
-    tags:
-    - '*'
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Release
-        uses: softprops/action-gh-release@v1
+#name: Create new Git Release when new Git Tag is made
+#
+#on:
+#  push:
+#    tags:
+#    - '*'
+#
+#jobs:
+#  git_release_when_git_tag:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout
+#        uses: actions/checkout@v2
+#      - name: Release
+#        uses: softprops/action-gh-release@v1
