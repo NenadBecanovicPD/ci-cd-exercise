@@ -36,5 +36,5 @@ jobs:
       - name: Create new Git Release when PR is merged
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ steps.tag_version.outputs.tag }}
+          tag_name: ${{ steps.tag_version.outputs.new_tag }}
 #          body: ${{ github.event.pull_request.title }}
